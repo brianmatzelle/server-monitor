@@ -70,8 +70,8 @@ class ServerMonitor:
                         spinner_symbol = f" {str(i)} "
 
                     # Wrap with the spinner's pastel color
-                    colored_symbol = f"{self.spinner_colors[i]}{spinner_symbol}\033[0m"
-
+                    colored_symbol = f"{random_pastel_color()}{spinner_symbol}\033[0m"
+                    
                     # Add a bit of random spacing
                     colored_symbol += " " * random.randint(0, 1)
                     spinners_to_show.append(colored_symbol)
